@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app='MyApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <style> body { font-size: 1.2em; }</style>
+    <title>Custom Filter AngularJS</title>
+  </head>
+  <body>
+    <h1>Custom Filter AngularJS</h1>
+    <div ng-controller='MyCtrl'>
+      Message: {{ message | replace : 'World' : 'people' | uppercase }}
+    </div>
+  </body>
